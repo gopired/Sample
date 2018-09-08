@@ -8,24 +8,25 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoController {
-	
+
 	@GetMapping(path = "/getName")
 	public String getName() {
 		return "Demo";
 	}
+
 	@PutMapping(path = "/updateName")
-	public String putName(){
-		return "DemoPut";
+	public String putName() {
+		return "Successfully Updated";
 	}
-	@PostMapping(path="/insertName")
-	public String updateName(){
-		return"Sucessfully Inserted ";
+
+	@PostMapping(path = "/insertName")
+	public String updateName() {
+		return "Sucessfully Inserted ";
 	}
-	
-	@DeleteMapping(path="/deleteName")
-	public String deleteName(){
-		return"Sucessfully Deleted";
+
+	@DeleteMapping(path = "/deleteName")
+	public String deleteName() {
+		return "Sucessfully Deleted";
 	}
-	
 
 }
